@@ -1,0 +1,143 @@
+/*--------- body------------ */
+body {
+    font-family: "Inconsolata", monospace;
+    color: #0d1e2d;
+  }
+/*----------- a color and hover------------- */
+  a {
+    color: #777;
+    text-decoration: none;
+  }
+  a:hover {
+    color: #000;
+    /*----------- h font family -----------*/
+  }
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  .font-heading {
+    font-family: "Raleway", sans-serif;
+  }
+  .collapse{
+    background: #0d1e2d;
+  }
+  header .container{
+    padding: 48px 12px;
+  }
+  .navbar a{
+    text-decoration: none;
+    color: #000000;
+  }
+  .navbar a h1{
+    font-size: 30px;
+    font-family: "Inconsolata", monospace;
+  }
+ .portfolio-card img{
+  width: 415px;
+ }
+ .item{
+  overflow: hidden;
+ }
+ .item-wrap{
+  display: block;
+  transition: 0.3s all ease-in-out;
+ }
+ .work-info{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,0);
+  visibility: hidden;
+  opacity: 0;
+  z-index: 3;
+  transition: 0.3s all ease-in-out;
+ }
+ .item .item-wrap:after {
+  z-index: 2;
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s all ease-in-out;
+}
+.item-wrap:hover{
+  transform: scale(1.1);
+}
+.item-wrap:hover .work-info{
+  visibility: visible;
+  opacity: 1;
+  transform: translate(-50%,-50%);
+}
+.item-wrap:hover::after{
+  opacity: 1;
+  visibility: visible;
+}
+.clients{
+  padding: 70px 0;
+}
+.clients-card i{
+  font-size: 40px;
+}
+.title{
+  font-size: 28px;
+}
+.text{
+  font-family: "Inconsolata", monospace;
+  font-size: 18px;
+  font-weight: 400;
+}
+.list li {
+  margin-bottom: 10px;
+  position: relative;
+  padding-left: 30px;
+}
+.list li:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.7rem;
+  width: 10px;
+  height: 2px;
+  background: #000;
+}
+.slider{
+  padding: 70px 0;
+}
+.carousel-inner{
+  padding: 50px 50px 80px 50px;
+  background: #eceff2;
+  text-align: center;
+}
+.carousel-card{
+  width: 500px;
+  height: 280px;
+  margin: 0 auto;
+}
+.carousel-card img{
+  border-radius: 50%;
+  width: 120px;
+  margin: 0 auto 30px auto;
+}
+.carousel-card p{
+  font-size: 20px;
+  font-family: "Inconsolata", monospace;
+  font-weight: 500;
+  color: #0d1e2d;
+}
+.carousel-name{
+  font-size: 16px !important;
+  font-weight: 500;
+}
+.social{
+  display: flex;
+  justify-content: flex-end;
+  gap: 20px;
+}
